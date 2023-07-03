@@ -23,6 +23,7 @@ function ErrorFallback({error}) {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
+        backgroundColor: '#7286D3',
       }}
     />
   )
@@ -39,10 +40,11 @@ function AuthenticatedApp() {
           position: 'absolute',
           top: '10px',
           right: '10px',
+          color: 'white',
         }}
       >
         {user.username}
-        <Button variant="secondary" css={{marginLeft: '10px'}} onClick={logout}>
+        <Button variant="secondary" css={{marginLeft: '10px', color: '#7286D3'}} onClick={logout}>
           Logout
         </Button>
       </div>
@@ -50,10 +52,12 @@ function AuthenticatedApp() {
         css={{
           margin: '0 auto',
           padding: '4em 2em',
-          maxWidth: '840px',
+          maxWidth: '100%',
           width: '100%',
           display: 'grid',
           gridGap: '1em',
+          backgroundColor: '#7286D3',
+          color: 'white',
           gridTemplateColumns: '1fr 3fr',
           [mq.small]: {
             gridTemplateColumns: '1fr',
@@ -86,7 +90,7 @@ function NavLink(props) {
           margin: '5px 0',
           width: '100%',
           height: '100%',
-          color: colors.text,
+          color: 'black',
           borderRadius: '2px',
           borderLeft: '5px solid transparent',
           ':hover,:focus': {
@@ -119,6 +123,7 @@ function Nav(params) {
         padding: '1em 1.5em',
         border: `1px solid ${colors.gray10}`,
         borderRadius: '3px',
+        backgroundColor: 'white',
         [mq.small]: {
           position: 'static',
           top: 'auto',

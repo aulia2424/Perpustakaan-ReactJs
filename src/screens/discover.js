@@ -34,7 +34,13 @@ function DiscoverBooksScreen() {
             placeholder="Search books..."
             id="search"
             type="search"
-            css={{width: '100%'}}
+            css={{
+              width: '100%',
+              backgroundColor: 'white',
+              color: '#474E68',
+              textDecoration: 'none',
+              border: 'transparent',
+            }}
           />
           <Tooltip label="Search Books">
             <label htmlFor="search">
@@ -45,6 +51,8 @@ function DiscoverBooksScreen() {
                   position: 'relative',
                   marginLeft: '-35px',
                   background: 'transparent',
+                  color: '#7286D3',
+                  border: 'transparent',
                 }}
               >
                 {isLoading ? (

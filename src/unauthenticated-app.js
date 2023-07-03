@@ -29,6 +29,10 @@ function LoginForm({onSubmit, submitButton}) {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'stretch',
+        borderRadius: '20px',
+        backgroundColor: '#7286D3',
+        color: 'white',
+        width: '100%',
         '> div': {
           margin: '10px auto',
           width: '100%',
@@ -70,10 +74,12 @@ function UnauthenticatedApp() {
         justifyContent: 'center',
         width: '100%',
         height: '100vh',
+        backgroundColor: '#8EA7E9',
+        color: 'white',
       }}
     >
-      <Logo width="80" height="80" />
-      <h1>Bookshelf</h1>
+      <Logo width="80" height="80"/>
+      <h1>Perpustakaan</h1>
       <div
         css={{
           display: 'grid',

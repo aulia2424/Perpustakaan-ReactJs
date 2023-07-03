@@ -23,7 +23,7 @@ const CircleButton = styled.button({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  background: colors.base,
+  backgroundColor: '#7286D3',
   color: colors.text,
   border: `1px solid ${colors.gray10}`,
   cursor: 'pointer',
@@ -35,6 +35,7 @@ const BookListUL = styled.ul({
   display: 'grid',
   gridTemplateRows: 'repeat(auto-fill, minmax(100px, 1fr))',
   gridGap: '1em',
+  backgroundColor: '#7286D3',
 })
 
 const Spinner = styled(FaSpinner)({

@@ -21,6 +21,7 @@ function BookRow({book}) {
         alignItems: 'center',
         justifyContent: 'flex-end',
         position: 'relative',
+        backgroundColor: '#7286D3',
       }}
     >
       <Link
@@ -33,13 +34,13 @@ function BookRow({book}) {
           gridTemplateColumns: '140px 1fr',
           gridGap: 20,
           border: `1px solid ${colors.gray20}`,
-          color: colors.text,
+          color: 'white',
           padding: '1.25em',
           borderRadius: '3px',
           ':hover,:focus': {
             textDecoration: 'none',
             boxShadow: '0 5px 15px -5px rgba(0,0,0,.08)',
-            color: 'inherit',
+            color: '#E3DFFD',
           },
         }}
       >
@@ -65,7 +66,7 @@ function BookRow({book}) {
                 css={{
                   fontSize: '1.25em',
                   margin: '0',
-                  color: colors.indigo,
+                  color: 'white',
                 }}
               >
                 {title}
@@ -95,7 +96,7 @@ function BookRow({book}) {
           marginLeft: '20px',
           position: 'absolute',
           right: -20,
-          color: colors.gray80,
+          color: '#8EA7E9',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-around',
